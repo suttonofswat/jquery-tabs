@@ -7,32 +7,41 @@ var $redSection = $('#red');
 var $greenSection = $('#green');
 var $blueSection = $('#blue');
 
-$('#red-link').click(function() {
-  $( '#red' ).show();
-  $( '#green' ).hide();
-  $( '#blue' ).hide();
+// $('#red-link').click(function() {
+//   $( '#red' ).show();
+//   $( '#green' ).hide();
+//   $( '#blue' ).hide();
+//   this.style.backgroundColor = '#ccc';
+//   ($greenLink).css('backgroundColor', 'white');
+//   ($blueLink).css('backgroundColor', 'white');
+// });
+
+$redLink.click(function() {
+  $redSection.show();
+  $greenSection.hide();
+  $blueSection.hide();
   this.style.backgroundColor = '#ccc';
-  ($greenLink).css('backgroundColor', 'white');
-  ($blueLink).css('backgroundColor', 'white');
+  $greenLink.css('backgroundColor', 'white');
+  $blueLink.css('backgroundColor', 'white');
 });
 
 
-$( '#green-link' ).click(function() {
-  $( '#green' ).show();
-  $( '#red' ).hide();
-  $( '#blue' ).hide();
+$greenLink.click(function() {
+  $greenSection.show();
+  $redSection.hide();
+  $blueSection.hide();
   this.style.backgroundColor = '#ccc';
-  ($redLink).css('backgroundColor', 'white');
-  ($blueLink).css('backgroundColor', 'white');
+  $redLink.css('backgroundColor', 'white');
+  $blueLink.css('backgroundColor', 'white');
 });
 
 
-$( '#blue-link' ).click(function() {
-  $( '#blue' ).show();
-  $( '#red' ).hide();
-  $( '#green' ).hide();
+$blueLink.click(function() {
+  $blueSection.show();
+  $redSection.hide();
+  $greenSection.hide();
   this.style.backgroundColor = '#ccc';
-  ($redLink).css('backgroundColor', 'white');
-  ($greenLink).css('backgroundColor', 'white');
+  $redLink.css('backgroundColor', 'white');
+  $greenLink.css('backgroundColor', 'white');
 });
 
